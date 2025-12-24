@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>【緊急】99%の人が知らない「成功者の法則」を、たった1着で手に入れる方法</title>
     <meta name="description" content="なぜ、このパーカーを着た人だけが次々と成功を手にしているのか？その秘密を今だけ公開します。">
+    <meta property="og:title" content="【警告】この1着があなたの人生を変える">
+    <meta property="og:description" content="なぜ、このパーカーを着た人だけが次々と成功を手にしているのか？">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1200&q=80">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
         
@@ -21,7 +24,6 @@
             overflow-x: hidden;
         }
         
-        /* 派手なキラキラ背景 */
         .bg-sparkle {
             position: fixed;
             top: 0;
@@ -64,7 +66,6 @@
             z-index: 2;
         }
         
-        /* 超煽り警告バー */
         .mega-warning {
             background: linear-gradient(90deg, #ff0000, #ff4400, #ff0000, #ff4400);
             background-size: 300% 100%;
@@ -91,7 +92,6 @@
             50% { opacity: 0.5; }
         }
         
-        /* 緊急カウントダウン */
         .countdown-wrapper {
             background: linear-gradient(180deg, #1a0a00 0%, #2d1500 50%, #1a0a00 100%);
             border-top: 4px solid #ffd700;
@@ -162,7 +162,6 @@
             font-weight: bold;
         }
         
-        /* ヒーローセクション */
         .hero {
             padding: 50px 20px 30px;
             text-align: center;
@@ -210,7 +209,6 @@
             color: #ffd700;
         }
         
-        /* 驚愕の実績 */
         .shocking-stats {
             display: flex;
             justify-content: center;
@@ -239,7 +237,6 @@
             color: #aaa;
         }
         
-        /* 成功者イメージ */
         .success-visual {
             padding: 30px 20px;
             text-align: center;
@@ -278,7 +275,6 @@
             margin-top: 10px;
         }
         
-        /* 商品セクション */
         .product-section {
             padding: 50px 20px;
             background: linear-gradient(180deg, transparent, rgba(255,215,0,0.05), transparent);
@@ -356,7 +352,6 @@
             50% { transform: rotate(15deg) scale(1.1); }
         }
         
-        /* 価格セクション - めっちゃ胡散臭く */
         .price-section {
             padding: 50px 20px;
             text-align: center;
@@ -449,7 +444,151 @@
             line-height: 1.6;
         }
         
-        /* お客様の声 - より胡散臭く */
+        /* JMCトークン特典セクション */
+        .jmc-section {
+            padding: 60px 20px;
+            background: linear-gradient(180deg, #0a0505, #150a00, #0a0505);
+            text-align: center;
+        }
+        
+        .jmc-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #8b5cf6, #6366f1);
+            color: #fff;
+            padding: 8px 25px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .jmc-title {
+            font-size: 28px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #8b5cf6, #ffd700, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .jmc-subtitle {
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        
+        .jmc-card {
+            max-width: 500px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(139,92,246,0.2), rgba(99,102,241,0.1));
+            border: 2px solid #8b5cf6;
+            border-radius: 20px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .jmc-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(139,92,246,0.1), transparent);
+            animation: jmcShine 3s infinite;
+        }
+        
+        @keyframes jmcShine {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .jmc-amount {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .jmc-amount-number {
+            font-size: 72px;
+            font-weight: 900;
+            color: #ffd700;
+            text-shadow: 0 0 30px rgba(255,215,0,0.5);
+            line-height: 1;
+        }
+        
+        .jmc-amount-unit {
+            font-size: 24px;
+            color: #8b5cf6;
+            font-weight: bold;
+        }
+        
+        .jmc-amount-label {
+            color: #fff;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        .jmc-stats {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .jmc-stat {
+            background: rgba(0,0,0,0.3);
+            padding: 15px 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(139,92,246,0.5);
+        }
+        
+        .jmc-stat-value {
+            font-size: 20px;
+            font-weight: 900;
+            color: #ffd700;
+        }
+        
+        .jmc-stat-label {
+            font-size: 11px;
+            color: #888;
+        }
+        
+        .jmc-description {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            text-align: left;
+        }
+        
+        .jmc-description h4 {
+            color: #8b5cf6;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .jmc-description p {
+            color: #aaa;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+        
+        .jmc-description strong {
+            color: #ffd700;
+        }
+        
+        .jmc-warning {
+            margin-top: 20px;
+            color: #ff6600;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
         .testimonials {
             padding: 60px 20px;
             background: linear-gradient(180deg, #0a0a0a, #111, #0a0a0a);
@@ -560,7 +699,6 @@
             margin: 0 10px;
         }
         
-        /* ライフスタイル */
         .lifestyle {
             padding: 60px 20px;
         }
@@ -612,7 +750,6 @@
             margin-top: 15px;
         }
         
-        /* 特典セクション */
         .bonus-section {
             padding: 60px 20px;
             background: linear-gradient(180deg, #1a0a00, #0a0a0a);
@@ -665,7 +802,6 @@
             line-height: 1.6;
         }
         
-        /* CTA */
         .cta-section {
             padding: 60px 20px;
             text-align: center;
@@ -775,7 +911,6 @@
             font-weight: bold;
         }
         
-        /* 真面目な情報 */
         .real-info {
             padding: 40px 20px;
             background: rgba(255,255,255,0.03);
@@ -821,7 +956,6 @@
             font-size: 13px;
         }
         
-        /* PS */
         .ps-section {
             padding: 40px 20px;
             max-width: 550px;
@@ -840,7 +974,6 @@
             font-size: 13px;
         }
         
-        /* フッター */
         .footer {
             padding: 40px 20px;
             text-align: center;
@@ -859,7 +992,6 @@
             text-decoration: none;
         }
         
-        /* スクロールアニメーション */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
@@ -871,7 +1003,6 @@
             transform: translateY(0);
         }
         
-        /* グラフ */
         .graph-section {
             padding: 40px 20px;
         }
@@ -940,7 +1071,6 @@
             margin-top: 15px;
         }
 
-        /* 追加のCTAボタン（途中に） */
         .mini-cta {
             padding: 30px 20px;
             text-align: center;
@@ -976,12 +1106,10 @@
     <div class="sparkles" id="sparkles"></div>
     
     <div class="container">
-        <!-- 警告バー -->
         <div class="mega-warning">
             <span>⚠️ 【警告】この情報は、あなたの人生を180度変えてしまう危険性があります ⚠️</span>
         </div>
         
-        <!-- カウントダウン -->
         <div class="countdown-wrapper">
             <div class="urgent-label">🔥 緊急告知 🔥</div>
             <div class="countdown-main-title">受注生産終了まで、あと...</div>
@@ -1006,7 +1134,6 @@
             <div class="countdown-sub">⏰ 12月31日23:59に完全終了。再販の予定はありません。</div>
         </div>
         
-        <!-- ヒーロー -->
         <section class="hero">
             <div class="hero-eyecatch">▼ 99%の人が知らない真実 ▼</div>
             <h1>
@@ -1037,7 +1164,6 @@
             <p style="color:#444;font-size:10px;">※個人の感想です。効果を保証するものではありません。統計はすべて当社調べ（n=3）</p>
         </section>
         
-        <!-- 成功者イメージ -->
         <section class="success-visual fade-in">
             <div class="success-img-wrap">
                 <span class="success-badge">📸 購入者の1年後</span>
@@ -1046,7 +1172,6 @@
             <p class="success-caption">※写真はイメージです。パーカーとの因果関係は確認されていません。</p>
         </section>
         
-        <!-- 途中CTA -->
         <div class="mini-cta">
             <a href="https://woelfe-direct.moala.live/collections/spoart-gate-x-nomaps2025/products/woelfe-hokkaido-art-hoodie-2" class="mini-cta-button" target="_blank">
                 ▶ 今すぐ購入ページを見る
@@ -1054,23 +1179,21 @@
             <p class="mini-cta-note">※売り切れの場合はご了承ください</p>
         </div>
         
-        <!-- 商品セクション -->
         <section class="product-section fade-in">
             <div class="product-title">
-                <h2>✨ ヴォルフェ北海道 × 草間縄文 ✨</h2>
+                <h2>✨ ヴォルフェ北海道 × 草間縄文（元 木村）✨</h2>
                 <p>スポーツとアートが融合した、唯一無二のコラボレーション</p>
             </div>
             
             <div class="product-showcase">
                 <div class="product-glow"></div>
                 <div class="product-img-container">
-                    <img src="https://woelfe-direct.moala.live/cdn/shop/files/hoodie_front_4437691_1729829735_w640h640_white_l_1.png" alt="線の対位法 パーカー" class="product-img">
+                    <img src="https://suzuri.jp/woelfe-hokkaido/omoide/17478823/image" alt="線の対位法 パーカー" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&q=80'">
                     <div class="limited-badge">🔥 限定</div>
                 </div>
             </div>
         </section>
         
-        <!-- 価格 -->
         <section class="price-section fade-in">
             <p class="price-shock">正直に言います。この価格は<span style="color:#ff0000">異常</span>です。</p>
             <div class="price-original">通常価格 ¥198,000</div>
@@ -1090,7 +1213,47 @@
             </div>
         </section>
         
-        <!-- グラフ -->
+        <!-- JMCトークン特典 -->
+        <section class="jmc-section fade-in">
+            <div class="jmc-badge">🪙 Polygon Network</div>
+            <h2 class="jmc-title">🎁 今なら「JOMON COIN」もらえる 🎁</h2>
+            <p class="jmc-subtitle">購入者全員に、話題の暗号資産をプレゼント</p>
+            
+            <div class="jmc-card">
+                <div class="jmc-amount">
+                    <div class="jmc-amount-number">1,000</div>
+                    <div class="jmc-amount-unit">JMC</div>
+                    <div class="jmc-amount-label">JOMON COIN プレゼント！</div>
+                </div>
+                
+                <div class="jmc-stats">
+                    <div class="jmc-stat">
+                        <div class="jmc-stat-value">18,000枚</div>
+                        <div class="jmc-stat-label">総供給量（限定）</div>
+                    </div>
+                    <div class="jmc-stat">
+                        <div class="jmc-stat-value">5.5%</div>
+                        <div class="jmc-stat-label">1購入あたりの獲得率</div>
+                    </div>
+                </div>
+                
+                <div class="jmc-description">
+                    <h4>💎 JOMON COIN（JMC）とは？</h4>
+                    <p>
+                        草間縄文（元 木村）が発行する、<strong>Polygonチェーン上の超希少トークン</strong>です。<br><br>
+                        総供給量はわずか<strong>18,000枚</strong>。<br>
+                        つまり、このパーカーを1着買うだけで<strong>全体の約5.5%</strong>を手にすることに。<br><br>
+                        ビットコインの発行枚数2100万枚と比べてください。<br>
+                        この希少性、わかりますよね？<br><br>
+                        <strong>将来どうなるかは誰にもわかりませんが、<br>
+                        持っていないと上がった時に後悔するかもしれません。（※投資助言ではありません）</strong>
+                    </p>
+                </div>
+            </div>
+            
+            <p class="jmc-warning">⚠️ JMC特典は予告なく終了する場合があります</p>
+        </section>
+        
         <section class="graph-section fade-in">
             <div class="graph-container">
                 <div class="graph-title">📊 パーカー着用前後の人生充実度</div>
@@ -1110,7 +1273,6 @@
             </div>
         </section>
         
-        <!-- お客様の声 -->
         <section class="testimonials">
             <div class="section-header">
                 <h2>📣 購入者の声 📣</h2>
@@ -1127,7 +1289,8 @@
                     </div>
                 </div>
                 <p class="testimonial-text">
-                    正直、最初は「たかがパーカーで人生変わるわけない」と思っていました。でも届いて袖を通した瞬間、<strong style="color:#ffd700">何かが変わった</strong>んです。翌日、なぜか上司に褒められ、その週に昇進の話が。今では会社を辞めて、投資だけで生活しています。あの時、購入を決断した自分を褒めてあげたいです。
+                    正直、最初は「たかがパーカーで人生変わるわけない」と思っていました。でも届いて袖を通した瞬間、<strong style="color:#ffd700">何かが変わった</strong>んです。翌日、なぜか上司に褒められ、その週に昇進の話が。今では会社を辞めて、投資だけで生活しています。あの時、購入を決断した自分を褒めてあげたいです。<br><br>
+                    <span style="color:#8b5cf6">※おまけでもらったJMCも大事にホールドしてます。</span>
                 </p>
                 <div class="testimonial-result">
                     <div class="result-label">年収の変化</div>
@@ -1178,7 +1341,6 @@
             </div>
         </section>
         
-        <!-- ライフスタイル -->
         <section class="lifestyle fade-in">
             <div class="section-header">
                 <h2>🌴 購入者たちの日常 🌴</h2>
@@ -1202,7 +1364,6 @@
             <p class="lifestyle-note">※画像はすべてイメージです。パーカーとの因果関係は一切ございません。</p>
         </section>
         
-        <!-- 特典 -->
         <section class="bonus-section fade-in">
             <div class="section-header">
                 <h2>🎁 今だけの限定特典 🎁</h2>
@@ -1211,9 +1372,20 @@
             
             <div class="bonus-card">
                 <div class="bonus-header">
+                    <div class="bonus-icon">🪙</div>
+                    <div class="bonus-title">
+                        <h4>特典①：JOMON COIN 1,000 JMC</h4>
+                        <p class="value">（総供給18,000枚の希少トークン）</p>
+                    </div>
+                </div>
+                <p class="bonus-desc">Polygon上で発行された超希少トークン。全体の5.5%があなたのウォレットに。将来価値は未知数。夢がある。</p>
+            </div>
+            
+            <div class="bonus-card">
+                <div class="bonus-header">
                     <div class="bonus-icon">⚽</div>
                     <div class="bonus-title">
-                        <h4>特典①：勝利のエネルギー注入済み</h4>
+                        <h4>特典②：勝利のエネルギー注入済み</h4>
                         <p class="value">（プライスレス）</p>
                     </div>
                 </div>
@@ -1224,7 +1396,7 @@
                 <div class="bonus-header">
                     <div class="bonus-icon">🎨</div>
                     <div class="bonus-title">
-                        <h4>特典②：アーティスト草間縄文の波動</h4>
+                        <h4>特典③：アーティスト草間縄文の波動</h4>
                         <p class="value">（プライスレス）</p>
                     </div>
                 </div>
@@ -1235,7 +1407,7 @@
                 <div class="bonus-header">
                     <div class="bonus-icon">👕</div>
                     <div class="bonus-title">
-                        <h4>特典③：コットン100%の着心地</h4>
+                        <h4>特典④：コットン100%の着心地</h4>
                         <p class="value">（これはマジ）</p>
                     </div>
                 </div>
@@ -1243,11 +1415,10 @@
             </div>
         </section>
         
-        <!-- メインCTA -->
         <section class="cta-section">
             <p class="cta-urgency">⚠️ 残り時間わずか ⚠️</p>
             <h2 class="cta-title">今すぐ「勝ち組」の仲間入りを</h2>
-            <p class="cta-subtitle">この決断が、あなたの人生を変える第一歩になります</p>
+            <p class="cta-subtitle">この決断が、あなたの人生を変える第一歩になります<br>（+ 1,000 JMC もゲット）</p>
             
             <a href="https://woelfe-direct.moala.live/collections/spoart-gate-x-nomaps2025/products/woelfe-hokkaido-art-hoodie-2" class="cta-button" target="_blank">
                 🛒 今すぐ購入する
@@ -1256,11 +1427,10 @@
             <p class="cta-guarantee">※クリックすると公式販売ページに移動します</p>
             
             <div class="cta-deadline">
-                <p>⏰ 受注生産は12月31日まで<br>この日を過ぎると購入できません</p>
+                <p>⏰ 受注生産は12月31日まで<br>この日を過ぎると購入できません<br>JMC特典も終了します</p>
             </div>
         </section>
         
-        <!-- 真面目な情報 -->
         <div class="real-info">
             <h3>📋 本当の商品情報（これはマジ）</h3>
             <div class="real-info-grid">
@@ -1270,7 +1440,7 @@
                 </div>
                 <div class="real-info-item">
                     <span class="real-info-label">アーティスト</span>
-                    <span class="real-info-value">草間縄文</span>
+                    <span class="real-info-value">草間縄文（元 木村）</span>
                 </div>
                 <div class="real-info-item">
                     <span class="real-info-label">コラボ</span>
@@ -1293,34 +1463,37 @@
                     <span class="real-info-value">〜2025年12月31日</span>
                 </div>
                 <div class="real-info-item">
+                    <span class="real-info-label">特典</span>
+                    <span class="real-info-value">JOMON COIN (JMC) 1,000枚</span>
+                </div>
+                <div class="real-info-item">
                     <span class="real-info-label">備考</span>
                     <span class="real-info-value">受注生産（SUZURIより発送）</span>
                 </div>
             </div>
         </div>
         
-        <!-- PS -->
         <section class="ps-section fade-in">
             <h3>P.S.</h3>
             <p>
                 ここまで読んでくれてありがとう。<br><br>
                 もうお気づきだと思いますが、このLPは情報商材の「あの感じ」を全力でパロディしたものです。年収が上がるとか、彼女ができるとか、そんな効果は一切ありません。<br><br>
                 でも、パーカー自体は本当にかっこいいし、ヴォルフェ北海道 × NoMaps2025の正真正銘のコラボアート作品です。<br><br>
+                JMCは...まあ、ロマンってことで。<br><br>
                 もし気に入ってくれたら、買ってくれると嬉しいです。
             </p>
         </section>
         
-        <!-- 最終CTA -->
         <div class="mini-cta" style="padding-bottom:50px;">
             <a href="https://woelfe-direct.moala.live/collections/spoart-gate-x-nomaps2025/products/woelfe-hokkaido-art-hoodie-2" class="cta-button" target="_blank">
                 🛒 購入ページへ
             </a>
         </div>
         
-        <!-- フッター -->
         <footer class="footer">
             <p>※このLPは情報商材のパロディです</p>
             <p>※実際の効果には個人差があります（というか効果はありません）</p>
+            <p>※JMCは投資助言ではありません。価値がゼロになる可能性があります</p>
             <p>※でもパーカーは本当にかっこいいです</p>
             <p style="margin-top:15px;">
                 販売: <a href="https://woelfe.team/" target="_blank">ヴォルフェ北海道</a> ／ 
@@ -1330,7 +1503,6 @@
     </div>
     
     <script>
-        // キラキラ生成
         const sparklesContainer = document.getElementById('sparkles');
         for (let i = 0; i < 50; i++) {
             const sparkle = document.createElement('div');
@@ -1342,7 +1514,6 @@
             sparklesContainer.appendChild(sparkle);
         }
         
-        // カウントダウン
         function updateCountdown() {
             const deadline = new Date('2025-12-31T23:59:59+09:00');
             const now = new Date();
@@ -1364,7 +1535,6 @@
         setInterval(updateCountdown, 1000);
         updateCountdown();
         
-        // スクロールアニメーション
         const fadeElements = document.querySelectorAll('.fade-in');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
