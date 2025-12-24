@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>【緊急】99%の人が知らない「成功者の法則」を、たった1着で手に入れる方法</title>
     <meta name="description" content="なぜ、このパーカーを着た人だけが次々と成功を手にしているのか？その秘密を今だけ公開します。">
-    <meta property="og:title" content="【警告】この1着があなたの人生を変える">
-    <meta property="og:description" content="なぜ、このパーカーを着た人だけが次々と成功を手にしているのか？">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1200&q=80">
+    
+    <!-- OGP -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kimura-jane.github.io/LP-wolfe/">
+    <meta property="og:title" content="【警告】この1着があなたの人生を変える｜線の対位法パーカー">
+    <meta property="og:description" content="なぜ、このパーカーを着た人だけが次々と成功を手にしているのか？ヴォルフェ北海道×草間縄文コラボ。今なら1,000 JMCプレゼント。">
+    <meta property="og:image" content="https://kimura-jane.github.io/LP-wolfe/IMG_0872.jpeg">
+    <meta property="og:site_name" content="線の対位法｜成功者のパーカー">
+    <meta property="og:locale" content="ja_JP">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="【警告】この1着があなたの人生を変える">
+    <meta name="twitter:description" content="なぜ、このパーカーを着た人だけが次々と成功を手にしているのか？今なら1,000 JMCプレゼント。">
+    <meta name="twitter:image" content="https://kimura-jane.github.io/LP-wolfe/IMG_0872.jpeg">
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
         
@@ -312,12 +325,12 @@
             border-radius: 25px;
             opacity: 0.4;
             filter: blur(20px);
-            animation: glowRotate 5s linear infinite;
+            animation: glowPulse 3s ease-in-out infinite;
         }
         
-        @keyframes glowRotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        @keyframes glowPulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
         }
         
         .product-img-container {
@@ -444,7 +457,6 @@
             line-height: 1.6;
         }
         
-        /* JMCトークン特典セクション */
         .jmc-section {
             padding: 60px 20px;
             background: linear-gradient(180deg, #0a0505, #150a00, #0a0505);
@@ -564,6 +576,8 @@
             background: rgba(0,0,0,0.3);
             border-radius: 10px;
             text-align: left;
+            position: relative;
+            z-index: 1;
         }
         
         .jmc-description h4 {
@@ -1188,7 +1202,7 @@
             <div class="product-showcase">
                 <div class="product-glow"></div>
                 <div class="product-img-container">
-                    <img src="https://suzuri.jp/woelfe-hokkaido/omoide/17478823/image" alt="線の対位法 パーカー" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&q=80'">
+                    <img src="IMG_0872.jpeg" alt="線の対位法 パーカー" class="product-img">
                     <div class="limited-badge">🔥 限定</div>
                 </div>
             </div>
@@ -1213,7 +1227,6 @@
             </div>
         </section>
         
-        <!-- JMCトークン特典 -->
         <section class="jmc-section fade-in">
             <div class="jmc-badge">🪙 Polygon Network</div>
             <h2 class="jmc-title">🎁 今なら「JOMON COIN」もらえる 🎁</h2>
